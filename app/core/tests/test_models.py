@@ -3,7 +3,6 @@ Tests for models.
 """
 from django.test import TestCase
 from django.contrib.auth import get_user_model
-from inquirer import password
 
 class ModelTests(TestCase):
     """Test models."""
