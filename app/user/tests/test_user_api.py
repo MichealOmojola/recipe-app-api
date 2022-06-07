@@ -5,7 +5,7 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 
-from rest_framework.test import ApiClient
+from rest_framework.test import APIClient
 from rest_framework import status
 
 CREATE_USER_URL = reverse('user:create')
@@ -20,7 +20,7 @@ class PublicUserApiTests(TestCase):
     """Test the public features of the API."""
 
     def setUp(self):
-        self.client = ApiClient()
+        self.client = APIClient()
 
     def test_create_user_success(self):
         """Test if creating a user is successful."""
